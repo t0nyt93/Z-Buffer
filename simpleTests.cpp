@@ -7,9 +7,9 @@ void simpleTest()
 {
 	osuPerspective(90.0, 1.0, -1000.);
 
-	float from[3]={3.0,0.0,3.0};
-	float at[3] = {0.0,0.0,-8.0};
-	float up[3] = {0.0, 1.0, 0.0};
+	double from[3]={0.0,0.0,0.0};
+	double at[3] = {0.0,0.0,-1.0};
+	double up[3] = {0.0, 1.0, 0.0};
 
 	osuLookat (from, at, up);
 
@@ -36,7 +36,6 @@ void simpleTest()
 	osuDiffuse(1.0, 0.0 , 0.0 );
 	osuSpecular(1.0, 1.0, 1.0, 1.0);
 
-	osuColor3f(0.0,0.0,1.0);
 	osuBegin(OSU_POLYGON);
 	osuVertex3f(0.0, -1.75, -2.5);
 	osuVertex3f(0.0, 1.75, -2.5);
@@ -50,9 +49,9 @@ void blueCube()
 {
 	osuPerspective(40, 7.5, 100);
 
-	float from[3]={5.0,5.0,5.0};
-	float at[3] = {0.0,0.0,0.0};
-	float up[3] = {0.0, 1.0, 0.0};
+	double from[3]={5.0,5.0,5.0};
+	double at[3] = {0.0,0.0,0.0};
+	double up[3] = {0.0, 1.0, 0.0};
 
 	osuLookat (from, at, up);
 

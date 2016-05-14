@@ -116,11 +116,11 @@ void osuBeginGraphics ( int w, int h )
 	glutInit(&argc,&argv);
 
 	// set up a window with RGB color and one buffer 
-	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE | GLUT_DEPTH);
 	glutInitWindowSize(w,h);
 	glutInitWindowPosition(0,0);
 	glutCreateWindow("CS551 OSUGL");
-    gluOrtho2D( -0.5, w - 0.5, -0.5, h - 0.5 );
+    //gluOrtho2D( -0.5, w - 0.5, -0.5, h - 0.5 );
 
 
 

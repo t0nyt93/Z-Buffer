@@ -58,8 +58,8 @@ void osuGetFramebufferSize ( int *w, int *h );
 
 // Declarations of polygon drawing routines
 
-enum OSUDrawable { OSU_NONE, OSU_TRIANGLE ,OSU_LINES };
-
+enum OSUDrawable { OSU_NONE, OSU_TRIANGLE ,OSU_LINES , OSU_POLYGON};
+enum OSUModel {OSU_SMOOTH, OSU_FLAT};
 void osuColor3f ( float r, float g, float b );
 void osuVertex2f ( float x, float y );
 void osuBegin ( int /* OSUDrawable */ );

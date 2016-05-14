@@ -107,6 +107,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\tony.tyrrell\Source\Repos\Z-Buffer\project2\project2\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -156,7 +158,6 @@
     <ClCompile Include="..\..\ObjLoader.cpp" />
     <ClCompile Include="..\..\osuGraphics.c" />
     <ClCompile Include="..\..\osuVector.cpp" />
-    <ClCompile Include="..\..\simpleTests.cpp" />
     <ClCompile Include="..\..\vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
